@@ -18,14 +18,14 @@
     font-style: normal;
     font-weight: 400;
     src: local(""), url("../fonts/alef-v18-latin-regular.woff2") format("woff2"),
-       url("../fonts/alef-v18-latin-regular.woff") format("woff"); 
+        url("../fonts/alef-v18-latin-regular.woff") format("woff");
 }
 @font-face {
     font-family: "Alef";
     font-style: normal;
     font-weight: 700;
     src: local(""), url("../fonts/alef-v18-latin-700.woff2") format("woff2"),
-       url("../fonts/alef-v18-latin-700.woff") format("woff"); 
+        url("../fonts/alef-v18-latin-700.woff") format("woff");
 }
 
 * {
@@ -162,15 +162,15 @@ body {
 
 /* header-bottom */
 
-.main{
+.main {
     background-color: rgba(0, 0, 0, 0.952);
 }
 
-.main__first-wrapper {
+.main__about-wrapper {
     padding: 20px 170px;
 }
 
-.first-wrapper__me-list {
+.about-wrapper__me-list {
     position: relative;
     list-style: none;
 }
@@ -184,17 +184,6 @@ body {
     background-color: rgb(0, 238, 255);
 }
 
-.me-list__p {
-    position: absolute;
-    top: 39px;
-    left: 49.5%;
-    width: 15px;
-    height: 15px;
-    margin: 0 auto;
-    background-color: rgb(0, 238, 255);
-    border-radius: 50%;
-}
-
 .me-list__list {
     width: 110px;
     margin: 0 auto;
@@ -205,35 +194,34 @@ body {
     color: rgb(0, 238, 255);
 }
 
-
-.first-wrapper__second-wrapper {
+.about-wrapper__second-wrapper {
     display: flex;
     align-items: center;
     justify-content: space-between;
     margin-top: 40px;
 }
 
-.second-wrapper__img-list{
+.second-wrapper__img-list {
     list-style: none;
 }
 
-.ali-dev{
+.ali-dev {
     border-radius: 30px;
 }
 
-.second-wrapper__info-list{
+.second-wrapper__info-list {
     width: 550px;
     list-style: none;
 }
 
-.info-list__there{
+.info-list__there {
     font-family: "Alegreya SC";
     font-size: 28px;
     color: white;
     margin-bottom: 10px;
 }
 
-.info-list__info{
+.info-list__info {
     font-family: "Alef";
     font-size: 20px;
     color: white;
@@ -242,12 +230,14 @@ body {
 
 /* =================skills==================== */
 
-.main_second-wrapper{
+.main_skills-wrapper {
     margin-top: 40px;
+    padding: 0 100px 20px 100px;
 }
 
-.second-wrapper__skills-list{
+.second-wrapper__skills-list {
     position: relative;
+    list-style: none;
 }
 
 .skills-list__item {
@@ -260,6 +250,10 @@ body {
     color: rgb(0, 238, 255);
 }
 
+.skills-wrapper__skills-list {
+    list-style: none;
+}
+
 .skills-list__paragraph {
     width: 150px;
     height: 2px;
@@ -269,19 +263,121 @@ body {
     background-color: rgb(0, 238, 255);
 }
 
-.skills-list__p {
-    position: absolute;
-    top: 39px;
-    left: 49.5%;
-    width: 15px;
-    height: 15px;
-    margin: 0 auto;
-    background-color: rgb(0, 238, 255);
-    border-radius: 50%;
-}
-
-.second-wrapper__second-wrapper{
+.skills-wrapper__text-wrapper {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    list-style: none;
+}
+
+.text-wrapper__info-list {
+    width: 600px;
+}
+
+.skills__works {
+    text-decoration: none;
+    color: rgb(0, 238, 255);
+    background-color: transparent;
+    border: 1px solid rgb(0, 238, 255);
+    padding: 10px 20px;
+}
+.skills__works:hover {
+    text-decoration: none;
+    color: black;
+    background-color: rgb(0, 238, 255);
+    padding: 10px 20px;
+    transition: 0.5s all;
+}
+
+.text-wrapper__skills-points {
+    list-style: none;
+    width: 500px;
+}
+
+.skills-points__points-list {
+    font-size: 20px;
+    font-weight: 700;
+    color: rgb(255, 255, 255);
+    list-style: none;
+    text-decoration: none;
+    padding-bottom: 15px;
+}
+
+.skills-points__skills-html {
+    width: 95%;
+    padding: 10px 10px;
+    background-color: orangered;
+}
+
+.skills-points__skills-css {
+    width: 80%;
+    padding: 10px 10px;
+    background-color: lightseagreen;
+}
+
+.skills-points__skills-js {
+    width: 60%;
+    padding: 10px 10px;
+    background-color: greenyellow;
+}
+
+.skills-points__skills-react {
+    width: 70%;
+    padding: 10px 10px;
+    background-color: blueviolet;
+}
+
+.points-list__span {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 5px;
+}
+
+/* ===============================contacts============================================ */
+
+.contact {
+    padding: 30px 100px 50px 100px;
+}
+
+.name-list__contact-text {
+    width: 110px;
+    margin: 0 auto;
+    font-family: "Alegreya SC";
+    font-weight: 700;
+    font-size: 25px;
+    list-style: none;
+    color: rgb(0, 238, 255);
+}
+
+.contacts-wrapper {
+    margin-top: 30px;
+}
+
+.contacts-wrapper__contacts-list {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.contacts-list__contacts-item {
+    width: 100px;
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+}
+
+.contacts-list__contacts-item:hover {
+    cursor: pointer;
+}
+
+.contacts-links {
+    color: rgb(0, 238, 255);
+    text-decoration: none;
+}
+.contacts-links:hover {
+    transform: scale(1.2);
+    transition: 0.7s all;
 }
